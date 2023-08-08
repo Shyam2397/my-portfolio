@@ -29,51 +29,52 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 max-[426px]:h-16 bg-black text-white fixed px-4 z-10">
-      <div>
-        <h1 className="text-5xl max-[426px]:text-4xl font-signature ml-2">
-          Shyam
-        </h1>
-      </div>
-
-      <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
-          >
-            <Link to={link} smooth duration={500}>
-              {link}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div
-        onClick={() => setNav(!nav)}
-        className="pr-4 z-10 cursor-pointer text-gray-500 md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+    <div>
+      <div className="flex h-20 w-full justify-between place-items-center px-10 z-10 text-white bg-black fixed max-[426px]:h-16 max-[426px]:px-6">
+        <div>
+          <h1 className="text-5xl font-signature max-[426px]:text-4xl">
+            Shyam
+          </h1>
+        </div>
+        <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="text-4xl px-4 py-6 cursor-pointer capitalize"
+              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
             >
-              <Link
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                duration={500}
-              >
+              <Link to={link} smooth duration={500}>
                 {link}
               </Link>
             </li>
           ))}
         </ul>
-      )}
+        <div
+          onClick={() => setNav(!nav)}
+          className="pr-4 z-10 cursor-pointer text-gray-500 md:hidden text-3xl max-[426px]:text-xl"
+        >
+          {nav ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {nav && (
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+            {links.map(({ id, link }) => (
+              <li
+                key={id}
+                className="text-4xl px-4 py-6 cursor-pointer capitalize"
+              >
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };

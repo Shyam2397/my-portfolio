@@ -63,18 +63,15 @@ const Skills = () => {
   return (
     <div
       name="Skills"
-      className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+      className="w-full h-full bg-gradient-to-t from-black to-gray-800"
     >
-      <div className="mx-auto max-w-screen-lg md:pt-44 lg:pt-42 xl:pt-20 max-[426px]:pt-36 p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="flex flex-col max-w-screen-lg w-full h-screen text-white justify-center max-[426px]:px-5 md:px-10 sm:px-8 mx-auto">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 p-2 border-gray-500 capitalize">
-            Skills
-          </p>
-          <p className="py-6 text-xl">
-            These are the technologies I've used with
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 p-2 capitalize">
+            skills
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 lg:py-2 md:py-2 px-12 sm:px-0 max-[426px]:py-0.5">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 lg:py-2 md:py-2 px-12 sm:px-0 max-[426px]:py-0.5 max-[426px]:gap-4">
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -87,7 +84,7 @@ const Skills = () => {
               <img
                 src={src}
                 alt="skill-pic"
-                className="w-20 md:w-12 max-[426px]:w-10 mx-auto"
+                className="lg:w-16 md:w-16 md:p-2 sm:p-1 max-[426px]:p-2 max-[426px]:w-10 mx-auto"
               />
               <p className="mt-4">{title}</p>
             </div>

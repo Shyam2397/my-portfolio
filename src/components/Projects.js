@@ -37,9 +37,9 @@ const Projects = () => {
   return (
     <div
       name="Projects"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800"
+      className="w-full h-full bg-gradient-to-b from-gray-800 to-black"
     >
-      <div className="max-w-screen-lg p-4 md:pt-48 xl:pt-48 lg:pt-70 mx-auto flex flex-col justify-center w-full h-screen text-white max-[426px]:pt-40">
+      <div className="flex flex-col max-w-screen-lg h-screen w-full text-white justify-center mx-auto sm:px-10">
         <div className="pb-8">
           <p className="text-4xl inline font-bold border-b-4 p-2 border-gray-500 capitalize">
             projects
@@ -52,7 +52,7 @@ const Projects = () => {
           {projects.map(({ id, src }) => (
             <div
               key={id}
-              className=" max-[426px]:w-36 shadow-md shadow-gray-600 rounded-lg"
+              className=" max-[426px]:w-20 shadow-md shadow-gray-600 rounded-lg lg:w-56"
             >
               <img
                 src={src}

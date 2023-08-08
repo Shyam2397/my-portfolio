@@ -18,7 +18,7 @@ const Home = () => {
       name="Home"
       className="flex flex-col w-full h-full md:pt-20 bg-gradient-to-t from-black to-gray-800 lg:flex-row max-[426px]:px-5"
     >
-      <div className="grid flex-grow h-screen lg:ml-40  place-items-center">
+      <div className="grid max-w-screen-lg flex-grow h-screen lg:ml-40  place-items-center">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
             Hi, I'm{" "}
@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="grid flex-grow h-screen place-items-center">
+      <div className="grid max-w-screen-lg flex-grow h-screen place-items-center">
         <div>
           <img
             src={profile}
