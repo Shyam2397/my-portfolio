@@ -4,26 +4,20 @@ const About = () => {
   return (
     <div
       name="About"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-full bg-gradient-to-b from-black to-gray-800"
     >
-      <div className="p-4 max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full max-[426px]:pt-32">
+      <div className="flex flex-col max-w-screen-lg mx-auto h-screen w-full text-white justify-center md:px-10 sm:p-10 max-[426px]: px-5">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline capitalize border-b-4 p-2 border-gray-500">
+          <p className="text-4xl font-bold capitalize inline border-b-4 border-gray-500 p-2">
             about
           </p>
         </div>
-        <p className="text-xl mt-20 max-[426px]:mt-2">
-          Seeking Entry-level positions in a growth-oriented company in any
-          field. To acquire a challenging position in a reputed organization
-          where I could use my hardworking and creative skills for the growth
-          and good market position of the company.
-        </p>
-        <br />
         <p className="text-xl">
-          Seeking Entry-level positions in a growth-oriented company in any
-          field. To acquire a challenging position in a reputed organization
-          where I could use my hardworking and creative skills for the growth
-          and good market position of the company.
+          Hi, I'm a Well-qualified Full Stack Developer familiar with a wide
+          range of programming utilities and languages. Knowledgeable of backend
+          and frontend development requirements with database management.
+          Handles any part of the process with ease. Collaborative team player
+          with a willingness to learn in and grow with the organization.
         </p>
       </div>
     </div>
