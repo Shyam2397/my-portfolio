@@ -2,11 +2,12 @@ import React from "react";
 import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
 import github from "../assets/skills/github.png";
-import graphql from "../assets/skills/graphql.png";
+import mongodb from "../assets/skills/mongodb.png";
 import javascript from "../assets/skills/javascript.png";
-import nextjs from "../assets/skills/nextjs.png";
+import nodejs from "../assets/skills/nodejs.png";
 import react from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
+import bootstrap from "../assets/skills/bootstrap.png";
 
 const Skills = () => {
   const skills = [
@@ -36,24 +37,30 @@ const Skills = () => {
     },
     {
       id: 5,
+      src: mongodb,
+      title: "MONGODB",
+      style: "shadow-green-400",
+    },
+    {
+      id: 6,
+      src: nodejs,
+      title: "NODEJS",
+      style: "shadow-green-200",
+    },
+    {
+      id: 7,
       src: tailwind,
       title: "TAILWIND",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
-      src: nextjs,
-      title: "NEXTJS",
-      style: "shadow-white",
-    },
-    {
-      id: 7,
-      src: graphql,
-      title: "GRAPHQL",
-      style: "shadow-pink-400",
-    },
-    {
       id: 8,
+      src: bootstrap,
+      title: "BOOTSTRAP",
+      style: "shadow-violet-400",
+    },
+    {
+      id: 9,
       src: github,
       title: "GITHUB",
       style: "shadow-gray-400",
@@ -65,7 +72,7 @@ const Skills = () => {
       name="Skills"
       className="w-full h-full bg-gradient-to-t from-black to-gray-800"
     >
-      <div className="flex flex-col max-w-screen-lg w-full h-screen text-white justify-center max-[426px]:px-5 md:px-10 sm:px-8 mx-auto">
+      <div className="flex flex-col max-w-screen-lg w-full h-screen text-white justify-center max-[426px]:px-5 md:px-10 sm:px-8 mx-auto max-[426px]:pt-20">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 p-2 capitalize">
             skills
