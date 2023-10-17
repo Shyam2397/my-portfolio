@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -9,23 +9,14 @@ const SocialLink = () => {
       id: 1,
       child: (
         <>
-          Linkedin <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
-      child: (
-        <>
           Github <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/Shyam2397",
+      style: "rounded-tr-md",
     },
     {
-      id: 3,
+      id: 2,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
@@ -34,7 +25,7 @@ const SocialLink = () => {
       href: "mailto:shyamsundarr10@gmail.com",
     },
     {
-      id: 4,
+      id: 3,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
@@ -46,7 +37,7 @@ const SocialLink = () => {
   ];
 
   return (
-    <div className="hidden lg:flex xl:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex xl:flex flex-col top-[45%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style }) => (
           <li

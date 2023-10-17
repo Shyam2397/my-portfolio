@@ -1,36 +1,34 @@
 import React from "react";
-import arraydestruct from "../assets/p-icon/arrayDestruct.jpg";
-import installNode from "../assets/p-icon/installNode.jpg";
-import navbar from "../assets/p-icon/navbar.jpg";
-import reactParallax from "../assets/p-icon/reactParallax.jpg";
-import reactSmooth from "../assets/p-icon/reactSmooth.jpg";
-import reactWeather from "../assets/p-icon/reactWeather.jpg";
+import gmail from "../assets/p-icon/gmail.jpg";
+import imbd from "../assets/p-icon/Imbd.png";
+import restaurant from "../assets/p-icon/Restaurant.png";
+import makeup from "../assets/p-icon/makeup.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: arraydestruct,
+      src: gmail,
+      live: "https://shyam-capstone-1.netlify.app/",
+      code: "https://github.com/Shyam2397/gmail_clone_frontend",
     },
     {
       id: 2,
-      src: installNode,
+      src: imbd,
+      live: "https://imbd-clone-1012.netlify.app/",
+      code: "https://github.com/Shyam2397/imbd-fe",
     },
     {
       id: 3,
-      src: navbar,
+      src: restaurant,
+      live: "https://myrestaurant-1012.netlify.app/",
+      code: "https://github.com/Shyam2397/resturant-website",
     },
     {
       id: 4,
-      src: reactParallax,
-    },
-    {
-      id: 5,
-      src: reactSmooth,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: makeup,
+      live: "https://shyne-blue-makeup.netlify.app/",
+      code: "https://github.com/Shyam2397/Makeup-API",
     },
   ];
 
@@ -49,7 +47,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="grid max-[426px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 max-[426px]:gap-4 px-12 sm:px-0 max-[426px]:px-15">
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src, live, code }) => (
             <div
               key={id}
               className=" max-[426px]:w-28 shadow-md shadow-gray-600 rounded-lg lg:w-56"
@@ -61,10 +59,14 @@ const Projects = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-2 m-2 duration-200 hover:scale-105 max-[426px]:px-3 max-[426px]:m-0">
-                  Demo
+                  <a href={live} target="_blank" rel="noreferrer">
+                    Live
+                  </a>
                 </button>
                 <button className="w-1/2 px-6 py-2 m-2 duration-200 hover:scale-105 max-[426px]:px-3 max-[426px]:m-0">
-                  code
+                  <a href={code} target="_blank" rel="noreferrer">
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
